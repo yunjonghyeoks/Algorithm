@@ -1,5 +1,7 @@
 cnt = 1
 def fibonacci(n, a, b):
+    if n == 0:
+        return 0
     global cnt
     c = a + b
     
