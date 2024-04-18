@@ -1,7 +1,6 @@
 cnt = 1
 def fibonacci(n, a, b):
-    if n == 0:
-        return 0
+
     global cnt
     c = a + b
     
@@ -13,6 +12,10 @@ def fibonacci(n, a, b):
 
 n = int(input())
 
+if n == 0:
+    print(0)
+    exit()
+    
 default_value_0 = 0
 default_value_1 = 1
 fibonacci(n, default_value_0, default_value_1)
